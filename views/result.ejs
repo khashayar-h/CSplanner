@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="d-flex">
+
+    <section class="col-12 d-flex align-items-center flex-column">
+        <div class="d-flex flex-wrap" id="element-to-print" style="width: inherit;">
+
+                <% if (powerStation == "single") { %>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <img src="../partials/powerUnits/PowerUnit-C1-ID9-TB-Kempower.png" alt="" height="146px">
+                        <%- psCode %>
+                    </div>                   
+                <% } %>
+
+                <% if (powerStation == "double") { %>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <img src="../partials/powerUnits/PowerUnit-C2-ID9-TB-Kempower.png" alt="" height="146px">
+                        <%- psCode %>
+                    </div>                   
+                <% } %>
+
+                <% if (powerStation == "triple") { %>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <img src="../partials/powerUnits/PowerUnit-C3-ID9-TB-Kempower.png" alt="" height="146px">
+                        <%- psCode %>
+                    </div>                   
+                <% } %>
+
+                <% for (var i = 1; i <= acCount;  i++ ) { %>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <img src="../partials/sattellites/AC-Satellite-2AC.png" alt="" height="146px">
+                        AC Satellite
+                    </div>
+                <% } %>
+
+                <% for (var i = 1; i <= lcCount;  i++ ) { %>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <img src="../partials/sattellites/S-Series-LC-CCS2.png" alt="" height="146px">
+                        STQ.C.5.F.S
+                    </div>
+                <% } %>
+                
+                <% for (var i = 1; i <= doubleCcs2Count;  i++ ) { %>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <img src="../partials/sattellites/Satellite-2xCCS.png" alt="" height="146px">
+                        <%- doubleCcs2Code %>
+                    </div>
+                <% } %>
+
+
+                <% for (var i = 1; i <= ccs2chCount;  i++ ) { %>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <img src="../partials/sattellites/Satellite-CCS-CHAdeMO.png" alt="" height="146px">
+                        <%- ccs2chCode %>
+                    </div>
+                <% } %>
+
+                <% for (var i = 1; i <= ccs2Count;  i++ ) { %>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <img src="../partials/sattellites/Satellite-CSS2.png" alt="" height="146px">
+                        <%- ccs2Code %>
+                    </div>
+                <% } %>
+
+                <% for (var i = 1; i <= xTypeCount;  i++ ) { %>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <img src="../partials/sattellites/Satellite-CCS-CHAdeMO.png" alt="" height="146px">
+                        <%- xTypeCode %>
+                    </div>
+                <% } %>
+
+                <% for (var i = 1; i <= chademoCount;  i++ ) { %>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <img src="../partials/sattellites/Satellite-CSS2.png" alt="" height="146px">
+                        <%- chademoCode %>
+                    </div>
+                <% } %>
+
+                <% for (var i = 1; i <= pantographCount;  i++ ) { %>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <img src="../partials/pantograph/Pantograph-3000x4500-ID8-Kempower.png" alt="" height="146px">
+                        <%- pantographCode %>
+                    </div>
+                <% } %>
+
+                <% for (var i = 1; i <= cbCount;  i++ ) { %>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 146px;">
+                            <img class="card-img-top" src="../partials/controlBox/Control_Box-ID1-Kempower.png" alt="Card image cap" height="70px" style="width: 70px;">
+                         </div>                        
+                         PCNNUCO
+                    </div>
+                <% } %>
+        </div>
+        <input type="button" value="Save as PDF" id="saveAsPdf" class="btn btn-primary mt-3" style="width: fit-content;">
+    </section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $("#saveAsPdf").click(function () {
+    var element = document.getElementById('element-to-print');
+    var opt = {
+        margin:       1,
+        filename:     'myfile.pdf',
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
+    };
+    html2pdf(element, opt);
+    })
+</script>
+
+<script>
+    var node = document.getElementById('element-to-print');
+
+    domtoimage.toPng(node)
+        .then (function (dataUrl) {
+            var img = new Image();
+            img.src = dataUrl;
+            document.appendChild(img);
+        })
+        .catch(function (error) {
+            console.error('oops, something went wrong!', error);
+        });
+</script>
+
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+      <title>Document</title>
+   </head>
+   <body>
+
+      <!-- navbar -->
+      <nav class="navbar navbar-default navbar-light bg-dark navbar-fixed-top">
+         <a class="navbar-brand" href="#">
+            <svg class="navbar-brand" width="158" height="30" viewBox="0 0 942 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M89.4892 178.441C138.563 178.441 178.345 138.645 178.345 89.5538C178.345 40.4628 138.563 0.666656 89.4892 0.666656C40.4154 0.666656 0.633179 40.4628 0.633179 89.5538C0.633179 138.645 40.4154 178.441 89.4892 178.441Z" fill="url(#paint0_linear_185_1884)"></path>
+               <path d="M138.328 81.9134H97.0194V40.5905H81.8515V81.9134H40.5431V97.0866H81.8515V138.409H97.0194V97.0866H138.328V81.9134Z" fill="black"></path>
+           
+               <path class="letter" d="M541.515 71.4751C541.515 79.9764 536.674 85.357 525.916 85.357H509.78V57.5932H525.916C536.781 57.4856 541.515 62.7585 541.515 71.4751ZM561.308 71.4751C561.308 54.9029 549.798 41.8819 526.777 41.8819H490.632V137.549H509.78V100.853H526.777C551.411 100.853 561.308 86.0026 561.308 71.4751Z" fill="white"></path>
+               <path class="letter" d="M920.605 71.5827C920.605 80.1916 915.764 85.7874 905.114 85.7874H888.225V57.8084H905.222C915.872 57.8084 920.605 63.189 920.605 71.5827ZM940.399 71.2598C940.399 55.2257 928.888 41.9895 905.867 41.9895H869.077V137.656H888.225V100.423H898.23L919.314 137.656H941.474L918.561 98.916C933.944 94.6115 940.399 82.8819 940.399 71.2598Z" fill="white"></path>
+               <path class="letter" d="M686.309 137.656L708.792 137.549L726.864 69.4304L744.076 137.549H766.667L792.7 41.8819H772.046L755.694 115.703L738.052 41.8819H716.753L698.035 116.134L681.899 41.8819H661.352L686.309 137.656Z" fill="white"></path>
+               <path class="letter" d="M857.244 41.7743H799.799V137.549H857.244V121.945H819.055V96.5486H853.049V81.3753H819.055V57.378H857.244V41.7743Z" fill="white"></path>
+               <path class="letter" d="M644.57 89.4462C644.57 108.924 632.63 121.407 615.418 121.407C597.991 121.407 586.158 108.924 586.158 89.4462C586.158 69.9685 598.099 57.8084 615.418 57.8084C632.737 57.8084 644.57 69.9685 644.57 89.4462ZM664.364 89.4462C664.364 60.8215 642.742 40.4829 615.418 40.4829C588.417 40.4829 566.364 60.7139 566.364 89.4462C566.364 118.178 588.417 138.517 615.418 138.517C642.527 138.517 664.364 118.178 664.364 89.4462Z" fill="white"></path>
+               <path class="letter" d="M362.727 41.7743H305.39V137.549H362.727V121.945H324.538V96.5486H358.639V81.3753H324.538V57.378H362.727V41.7743Z" fill="white"></path>
+               <path class="letter" d="M374.56 137.549H393.708V75.3491L419.526 137.549H434.048L459.651 75.3491V137.549H478.799V41.8819H457.177L426.733 113.013L396.397 41.8819H374.56V137.549Z" fill="white"></path>
+               <path class="letter" d="M298.29 137.333L257.735 89.1234L297.214 41.6667H273.978L237.403 86.8635V41.6667H218.148V137.333H237.403V92.4593L273.978 137.333H298.29Z" fill="white"></path>
+           <defs>
+               <linearGradient id="paint0_linear_185_1884" x1="89.4484" y1="178.399" x2="89.4484" y2="0.627059" gradientUnits="userSpaceOnUse">
+                   <stop stop-color="#FF6400"></stop>
+                   <stop offset="1" stop-color="#FF7D00"></stop>
+               </linearGradient>
+           </defs>
+           </svg>
+         </a>
+      </nav>
+
+      <div class="container">
+      <form action="/result/plan" method="post">
+         <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner p-3">
+              <div class="carousel-item active">
+               <div class="row">
+   
+                  <div class="col-4">
+                  <div class="card" style="height: 100%;">
+                     <img class="card-img-top" src="./partials/sattellites/S-Series-LC-CCS2.png" alt="Card image cap">
+                     <div class="card-body">
+                        <div class="d-flex flex-column align-items-center">
+                           <label class="">
+                           Liquid Cooled
+                           </label>
+                           <select class="form-select mb-1" aria-label="Default select example" name="lcCount">
+                              <option selected disabled>Quantity</option>
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+                  <div class="col-4">
+                  <div class="card" style="height: 100%;">
+                     <img class="card-img-top" src="./partials/sattellites/Satellite-2xCCS.png" alt="Card image cap">
+                     <div class="card-body">
+                        <div class="d-flex flex-column align-items-center">
+                           <label class="">
+                           2x CCS2
+                           </label>
+                           <select class="form-select mb-1" aria-label="Default select example" name="doubleCcs2Count">
+                              <option selected disabled>Quantity</option>
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                           </select>
+                           <select class="form-select mb-1" aria-label="Default select example" name="doubleCcs2Length">
+                              <option selected disabled>Cable Length</option>
+                              <option value="5">5 meters</option>
+                              <option value="7">7 meters</option>
+                           </select>
+                           <select class="form-select mb-1" aria-label="Default select example" name="doubleCcs2Current">
+                              <option selected disabled>Current</option>
+                              <option value="C">200 A</option>
+                              <option value="D">250 A</option>
+                              <option value="E">300 A</option>
+                           </select>
+                           <select class="form-select mb-1" aria-label="Default select example" name="doubleCcs2Ui">
+                              <option selected disabled>UI & Paymanet</option>
+                              <option value="S">S - Standard User Interface</option>
+                              <option value="P">P - Payter</option>
+                           </select>
+                           <select class="form-select" aria-label="Default select example" name="doubleCcs2Branding">
+                              <option selected disabled>Branding</option>
+                              <option value="C0">C0 - unbranded</option>
+                              <option value="CN">Cn - branded</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+                  
+                  <div class="col-4">
+                  <div class="card" style="height: 100%;">
+                     <button type="button" class="btn col-1 d-flex justify-content-center mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="CHAdeMO connector charges the EV with max 125A current.">
+                        <i class="bi bi-info-circle-fill" style="color: #ff6400; font-size: x-large;"></i>
+                     </button>
+                     <img class="card-img-top" src="./partials/sattellites/Satellite-CCS-CHAdeMO.png" alt="Card image cap">
+                     <div class="card-body">
+                        <div class="d-flex flex-column align-items-center">
+                           <label class="">
+                           CCS2 CHAdeMO
+                           </label>
+                           <select class="form-select mb-1" aria-label="Default select example" name="ccs2chCount">
+                              <option selected disabled>Quantity</option>
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                           </select>
+                           <select class="form-select mb-1" aria-label="Default select example" name="ccs2chLength">
+                              <option selected disabled>Cable Length</option>
+                              <option value="5">5 meters</option>
+                              <option value="7">7 meters</option>
+                           </select>
+                           <select class="form-select mb-1" aria-label="Default select example" name="ccs2chCurrent">
+                              <option selected disabled>Current</option>
+                              <option value="C">200 A</option>
+                              <option value="D">250 A</option>
+                              <option value="E">300 A</option>
+                           </select>
+                           <select class="form-select mb-1" aria-label="Default select example" name="ccs2chUi">
+                              <option selected disabled>UI & Paymanet</option>
+                              <option value="S">S - Standard User Interface</option>
+                              <option value="P">P - Payter</option>
+                           </select>
+                           <select class="form-select" aria-label="Default select example" name="ccs2chBranding">
+                              <option selected disabled>Branding</option>
+                              <option value="C0">C0 - unbranded</option>
+                              <option value="CN">Cn - branded</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+   
+               </div>
+              </div>
+   
+              <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-4">
+                           <div class="card" style="height: 100%;">
+                                 <img class="card-img-top" src="./partials/sattellites/Satellite-CSS2.png" alt="Card image cap">
+                                 <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center">
+                                       <label class="">
+                                       Chademo
+                                       </label>
+                                       <select class="form-select mb-1" aria-label="Default select example" name="chademoCount">
+                                          <option selected disabled>Quantity</option>
+                                          <option value="0">0</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                       </select>
+                                       <select class="form-select mb-1" aria-label="Default select example" name="chademoLength">
+                                          <option selected disabled>Cable Length</option>
+                                          <option value="5">5 meters</option>
+                                          <option value="7">7 meters</option>
+                                       </select>
+                                       <select class="form-select mb-1" aria-label="Default select example" name="chademoCurrent">
+                                          <option selected disabled>Current</option>
+                                          <option value="B">125 A</option>
+                                       </select>
+                                       <select class="form-select mb-1" aria-label="Default select example" name="chademoUi">
+                                          <option selected disabled>UI & Paymanet</option>
+                                          <option value="S">S - Standard User Interface</option>
+                                          <option value="P">P - Payter</option>
+                                       </select>
+                                       <select class="form-select" aria-label="Default select example" name="chademoBranding">
+                                          <option selected disabled>Branding</option>
+                                          <option value="C0">C0 - unbranded</option>
+                                          <option value="CN">Cn - branded</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                           </div>
+                           </div>
+
+                           <div class="col-4">
+                           <div class="card" style="height: 100%;">
+                                 <button type="button" class="btn col-1 d-flex justify-content-center mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Internal changeover relays lock the charger to either CCS2 or CHAdeMO">
+                                    <i class="bi bi-info-circle-fill" style="color: #ff6400; font-size: x-large;"></i>
+                                 </button>
+                                 <img class="card-img-top" src="./partials/sattellites/Satellite-CCS-CHAdeMO.png" alt="Card image cap">
+                                 <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center">
+                                       <label class="">
+                                       X Type
+                                       </label>
+                                       <select class="form-select mb-1" aria-label="Default select example" name="xTypeCount">
+                                          <option selected disabled>Quantity</option>
+                                          <option value="0">0</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                       </select>
+                                       <select class="form-select mb-1" aria-label="Default select example" name="xTypeLength">
+                                          <option selected disabled>Cable Length</option>
+                                          <option value="5">5 meters</option>
+                                          <option value="7">7 meters</option>
+                                       </select>
+                                       <select class="form-select mb-1" aria-label="Default select example" name="xTypeCurrent">
+                                          <option selected disabled>Current</option>
+                                          <option value="C">200 A</option>
+                                          <option value="D">250 A</option>
+                                          <option value="E">300 A</option>
+                                       </select>
+                                       <select class="form-select mb-1" aria-label="Default select example" name="xTypeUi">
+                                          <option selected disabled>UI & Paymanet</option>
+                                          <option value="S">S - Standard User Interface</option>
+                                          <option value="P">P - Payter</option>
+                                       </select>
+                                       <select class="form-select" aria-label="Default select example" name="xTypeBranding">
+                                          <option selected disabled>Branding</option>
+                                          <option value="C0">C0 - unbranded</option>
+                                          <option value="CN">Cn - branded</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                           </div>
+                           </div>
+
+                           <div class="col-4">
+                           <div class="card" style="height: 100%;">
+                              <img class="card-img-top" src="./partials/sattellites/Satellite-CSS2.png" alt="Card image cap">
+                              <div class="card-body">
+                                 <div class="d-flex flex-column align-items-center">
+                                    <label class="">
+                                    CCS2
+                                    </label>
+                                    <select class="form-select mb-1" aria-label="Default select example" name="ccs2Count">
+                                       <option selected disabled>Quantity</option>
+                                       <option value="0">0</option>
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                       <option value="5">5</option>
+                                       <option value="6">6</option>
+                                       <option value="7">7</option>
+                                       <option value="8">8</option>
+                                    </select>
+                                    <select class="form-select mb-1" aria-label="Default select example" name="ccs2Length">
+                                       <option selected disabled>Cable Length</option>
+                                       <option value="5">5 meters</option>
+                                       <option value="7">7 meters</option>
+                                    </select>
+                                    <select class="form-select mb-1" aria-label="Default select example" name="ccs2Current">
+                                       <option selected disabled>Current</option>
+                                       <option value="C">200 A</option>
+                                       <option value="D">250 A</option>
+                                       <option value="E">300 A</option>
+                                    </select>
+                                    <select class="form-select mb-1" aria-label="Default select example" name="ccs2Ui">
+                                       <option selected disabled>UI & Paymanet</option>
+                                       <option value="S">S - Standard User Interface</option>
+                                       <option value="P">P - Payter</option>
+                                    </select>
+                                    <select class="form-select" aria-label="Default select example" name="ccs2Branding">
+                                       <option selected disabled>Branding</option>
+                                       <option value="C0">C0 - unbranded</option>
+                                       <option value="CN">Cn - branded</option>
+                                    </select>
+                                 </div>
+                              </div>
+                            </div>
+                           </div>
+   
+                  </div>   
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+            <div class="col d-flex">
+                  <!--AC Satelite-->
+                  <div class="col-4">
+                  <div class="card m-3" style="height: 100%;">
+                        <img class="card-img-top" src="./partials/sattellites/AC-Satellite-2AC.png" alt="Card image cap">
+                        <div class="card-body">
+                           <div class="d-flex flex-column align-items-center">
+                              <label class="">
+                              AC Satellite
+                              </label>
+                              <select class="form-select mb-1" aria-label="Default select example" name="acCount">
+                                 <option selected disabled>Quantity</option>
+                                 <option value="0">0</option>
+                              <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                                 <option value="6">6</option>
+                                 <option value="7">7</option>
+                                 <option value="8">8</option>
+                              </select>   
+                           </div>
+                        </div>
+                  </div>
+               </div>
+                  <!--pantograph-->
+                  <div class="col-4">
+                  <div class="card m-3" style="height: 100%;">
+                     <img class="card-img-top" src="./partials/pantograph/Pantograph-3000x4500-ID8-Kempower.png" alt="Card image cap">
+                     <div class="card-body">
+                        <div class="d-flex flex-column align-items-center">
+                           <label class="">
+                           Pantograph
+                           </label>
+                           <select class="form-select" aria-label="Default select example" name="pantographCount">
+                              <option selected disabled>Quantity</option>
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                           </select>
+                           <label for="customRange1" class="form-label">Height (mm)</label>
+                           <div class="d-flex">
+                              <input type="range" class="form-range" id="customRange1" name="pantographHeight" min="4500" max="5200" step="100" oninput="this.nextElementSibling.value = this.value" value="4500">
+                              <output>4500</output>
+                           </div>
+                           <label for="customRange1" class="form-label">Width (mm)</label>
+                           <div class="d-flex">
+                              <input type="range" class="form-range" id="customRange1" name="pantographWidth" min="3000" max="4000" step="250" oninput="this.nextElementSibling.value = this.value" value="3000">
+                              <output>3000</output>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+                  <!--Control Box-->
+                  <div class="col-4">
+                  <div class="card m-3" style="height: 100%;">
+                                    <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+                                       <img class="card-img-top" src="./partials/controlBox/Control_Box-ID1-Kempower.png" alt="Card image cap" style="width: 9rem;">
+                                    </div>
+                                    <div class="card-body">
+                                       <div class="d-flex flex-column align-items-center">
+                                          <label class="">
+                                          Control Box
+                                          </label>
+                                          <select class="form-select" aria-label="Default select example" name="cbCount">
+                                             <option selected disabled>Quantity</option>
+                                             <option value="0">0</option>
+                                             <option value="1">1</option>
+                                             <option value="2">2</option>
+                                             <option value="3">3</option>
+                                             <option value="4">4</option>
+                                             <option value="5">5</option>
+                                             <option value="6">6</option>
+                                             <option value="7">7</option>
+                                             <option value="8">8</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                  </div>
+                  </div>
+            </div>
+
+            <div class="row d-flex justify-content-center m-3">
+               <!--CS Cabinets-->
+               <div class="card col my-3">
+                  <div class="card-body d-flex align-items-center justify-content-around">
+                     <div class="d-flex">
+                        <div class="form-check d-flex flex-column p-0 align-items-center">
+                           <img src="./partials/powerUnits/PowerUnit-C1-ID9-TB-Kempower.png" alt="" height="146px">
+                           <div class="d-flex">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="single" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                              Single
+                              </label>
+                           </div>
+                        </div>
+                        <div class="form-check d-flex flex-column p-0 align-items-center">
+                           <img src="./partials/powerUnits/PowerUnit-C2-ID9-TB-Kempower.png" alt="" height="146px">
+                           <div class="d-flex">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="double" checked>
+                              <label class="form-check-label" for="gridRadios2">
+                              Double
+                              </label>
+                           </div>
+                        </div>
+                        <div class="form-check d-flex flex-column p-0 align-items-center">
+                           <img src="./partials/powerUnits/PowerUnit-C3-ID9-TB-Kempower.png" alt="" height="146px">
+                           <div class="d-flex">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="triple" checked>
+                              <label class="form-check-label" for="gridRadios3">
+                              Triple
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="d-flex flex-column">
+                        <select class="form-select mb-1" name="voltage">
+                           <option selected disabled>Voltage</option>
+                           <option value="50">500 Volts</option>
+                           <option value="80">800 Volts</option>
+                        </select>
+                        <select class="form-select mb-1" name="power">
+                           <option selected disabled>Power</option>
+                           <option value="160">160</option>
+                           <option value="320">320</option>
+                           <option value="480">480</option>
+                        </select>
+                        <select class="form-select mb-1" name="pdModule">
+                           <option selected disabled>Dynamic</option>
+                           <option value="D4">D4</option>
+                           <option value="D6">D6</option>
+                           <option value="D8">D8</option>
+                           <option value="R">R</option>
+                        </select>
+                        <select class="form-select mb-1" name="branding">
+                           <option selected disabled>Branding</option>
+                           <option value="C0">C0 - unbranded</option>
+                           <option value="CN">CN - branded</option>
+                        </select>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <!--generate button-->
+            <div class="col-sm-12 p-3 d-flex justify-content-center">
+               <button type="submit" class="btn btn-primary" style="background-color: #ff6400; border-color: #ff6400;">Generate</button>
+            </div>
+      </form>
+   </div>
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+       <script>
+         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+       </script>
+
+   </body>
+
+</html>
