@@ -105,6 +105,7 @@
                            </select>
                            <select class="form-select" aria-label="Default select example" name="doubleCcs2Branding">
                               <option selected disabled>Branding</option>
+                              <option value="">Kempower Standard</option>
                               <option value="C0">C0 - unbranded</option>
                               <option value="CN">Cn - branded</option>
                            </select>
@@ -154,6 +155,7 @@
                            </select>
                            <select class="form-select" aria-label="Default select example" name="ccs2chBranding">
                               <option selected disabled>Branding</option>
+                              <option value="">Kempower Standard</option>
                               <option value="C0">C0 - unbranded</option>
                               <option value="CN">Cn - branded</option>
                            </select>
@@ -203,6 +205,7 @@
                                        </select>
                                        <select class="form-select" aria-label="Default select example" name="chademoBranding">
                                           <option selected disabled>Branding</option>
+                                          <option value="">Kempower Standard</option>
                                           <option value="C0">C0 - unbranded</option>
                                           <option value="CN">Cn - branded</option>
                                        </select>
@@ -252,6 +255,7 @@
                                        </select>
                                        <select class="form-select" aria-label="Default select example" name="xTypeBranding">
                                           <option selected disabled>Branding</option>
+                                          <option value="">Kempower Standard</option>
                                           <option value="C0">C0 - unbranded</option>
                                           <option value="CN">Cn - branded</option>
                                        </select>
@@ -298,6 +302,7 @@
                                     </select>
                                     <select class="form-select" aria-label="Default select example" name="ccs2Branding">
                                        <option selected disabled>Branding</option>
+                                       <option value="">Kempower Standard</option>
                                        <option value="C0">C0 - unbranded</option>
                                        <option value="CN">Cn - branded</option>
                                     </select>
@@ -411,67 +416,189 @@
 
             <div class="row d-flex justify-content-center m-3">
                <!--CS Cabinets-->
-               <div class="card col my-3">
-                  <div class="card-body d-flex align-items-center justify-content-around">
-                     <div class="d-flex">
-                        <div class="form-check d-flex flex-column p-0 align-items-center">
-                           <img src="./partials/powerUnits/PowerUnit-C1-ID9-TB-Kempower.png" alt="" height="146px">
-                           <div class="d-flex">
-                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="single" checked>
-                              <label class="form-check-label" for="gridRadios1">
-                              Single
-                              </label>
-                           </div>
-                        </div>
-                        <div class="form-check d-flex flex-column p-0 align-items-center">
-                           <img src="./partials/powerUnits/PowerUnit-C2-ID9-TB-Kempower.png" alt="" height="146px">
-                           <div class="d-flex">
-                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="double" checked>
-                              <label class="form-check-label" for="gridRadios2">
-                              Double
-                              </label>
-                           </div>
-                        </div>
-                        <div class="form-check d-flex flex-column p-0 align-items-center">
-                           <img src="./partials/powerUnits/PowerUnit-C3-ID9-TB-Kempower.png" alt="" height="146px">
-                           <div class="d-flex">
-                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="triple" checked>
-                              <label class="form-check-label" for="gridRadios3">
-                              Triple
-                              </label>
-                           </div>
-                        </div>
-                     </div>
 
-                     <div class="d-flex flex-column">
-                        <select class="form-select mb-1" name="voltage">
-                           <option selected disabled>Voltage</option>
-                           <option value="50">500 Volts</option>
-                           <option value="80">800 Volts</option>
-                        </select>
-                        <select class="form-select mb-1" name="power">
-                           <option selected disabled>Power</option>
-                           <option value="160">160</option>
-                           <option value="320">320</option>
-                           <option value="480">480</option>
-                        </select>
-                        <select class="form-select mb-1" name="pdModule">
-                           <option selected disabled>Dynamic</option>
-                           <option value="D4">D4</option>
-                           <option value="D6">D6</option>
-                           <option value="D8">D8</option>
-                           <option value="R">R</option>
-                        </select>
-                        <select class="form-select mb-1" name="branding">
-                           <option selected disabled>Branding</option>
-                           <option value="C0">C0 - unbranded</option>
-                           <option value="CN">CN - branded</option>
-                        </select>
-                     </div>
-
-                  </div>
-               </div>
             </div>
+            <div id="carouselExampleCaptions2" class="carousel carousel-dark slide" data-bs-ride="false">
+               <div class="carousel-indicators">
+                 <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                 <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               </div>
+               <div class="carousel-inner p-3">
+                 <div class="carousel-item active">
+                  <div class="row d-flex justify-content-center m-3">
+                     <!--CS Cabinets-->
+                     <div class="card col my-3">
+                        <h5>Power Units</h5>
+                        <div class="card-body d-flex align-items-center justify-content-around">
+                           <div class="d-flex">
+                              <div class="form-check d-flex flex-column p-0 align-items-center">
+                                 <img src="./partials/powerUnits/PowerUnit-C1-ID9-TB-Kempower.png" alt="" height="146px">
+                                 <div class="d-flex">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="single" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                    Single
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="form-check d-flex flex-column p-0 align-items-center">
+                                 <img src="./partials/powerUnits/PowerUnit-C2-ID9-TB-Kempower.png" alt="" height="146px">
+                                 <div class="d-flex">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="double" checked>
+                                    <label class="form-check-label" for="gridRadios2">
+                                    Double
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="form-check d-flex flex-column p-0 align-items-center">
+                                 <img src="./partials/powerUnits/PowerUnit-C3-ID9-TB-Kempower.png" alt="" height="146px">
+                                 <div class="d-flex">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="triple" checked>
+                                    <label class="form-check-label" for="gridRadios3">
+                                    Triple
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+      
+                           <div class="d-flex flex-column">
+                              <select class="form-select mb-1" name="voltage">
+                                 <option selected disabled>Voltage</option>
+                                 <option value="50">500 Volts</option>
+                                 <option value="80">800 Volts</option>
+                              </select>
+                              <select class="form-select mb-1" aria-label="Default select example" name="pSCount">
+                                 <option selected disabled>Quantity</option>
+                                 <option value="0">0</option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                                 <option value="6">6</option>
+                                 <option value="7">7</option>
+                                 <option value="8">8</option>
+                              </select>
+                              <select class="form-select mb-1" name="power">
+                                 <option selected disabled>Power</option>
+                                 <option value="160">160</option>
+                                 <option value="320">320</option>
+                                 <option value="480">480</option>
+                              </select>
+                              <select class="form-select mb-1" name="pdModule">
+                                 <option selected disabled>Dynamic</option>
+                                 <option value="D4">D4</option>
+                                 <option value="D6">D6</option>
+                                 <option value="D8">D8</option>
+                                 <option value="R">R</option>
+                              </select>
+                              <select class="form-select mb-1" name="branding">
+                                 <option selected disabled>Branding</option>
+                                 <option value="">Kempower Standard</option>
+                                 <option value="C0">C0 - unbranded</option>
+                                 <option value="CN">CN - branded</option>
+                              </select>
+                           </div>
+      
+                        </div>
+                     </div>
+                  </div>
+                 </div>
+      
+                 <div class="carousel-item">
+                  <div class="row d-flex justify-content-center m-3">
+                     <div class="card col my-3">
+                        <h5>Charging Stations</h5>
+                        <div class="card-body d-flex align-items-center justify-content-around">
+                           <div class="d-flex">
+                              <div class="form-check d-flex flex-column p-0 align-items-center">
+                                 <img src="./partials/chargingStations/singleCS.png" alt="" height="146px">
+                                 <div class="d-flex">
+                                    <input class="form-check-input" type="radio" name="cSgridRadios" id="cSgridRadios1" value="single" checked>
+                                    <label class="form-check-label" for="cSgridRadios1">
+                                    Single
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="form-check d-flex flex-column p-0 align-items-center">
+                                 <img src="./partials/chargingStations/doubleCS.png" alt="" height="146px">
+                                 <div class="d-flex">
+                                    <input class="form-check-input" type="radio" name="cSgridRadios" id="cSgridRadios2" value="double" checked>
+                                    <label class="form-check-label" for="cSgridRadios2">
+                                    Double
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+      
+                           <div class="d-flex flex-column">
+                              <select class="form-select mb-1" name="cSVoltage">
+                                 <option selected disabled>Product Type</option>
+                                 <option value="50">C500</option>
+                                 <option value="80">C800</option>
+                              </select>
+                              <select class="form-select mb-1" name="cSPower">
+                                 <option selected disabled>Power</option>
+                                 <option value="160">160</option>
+                                 <option value="320">320</option>
+                              </select>
+                              <select class="form-select mb-1" name="cSConnectorType">
+                                 <option selected disabled>Connector Type</option>
+                                 <option value="C">C</option>
+                                 <option value="CC">CC</option>
+                                 <option value="CCA">CCA</option>
+                                 <option value="CD">CD</option>
+                                 <option value="CDA">CDA</option>
+                              </select>
+                              <select class="form-select mb-1" aria-label="Default select example" name="cSCount">
+                                 <option selected disabled>Quantity</option>
+                                 <option value="0">0</option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                                 <option value="6">6</option>
+                                 <option value="7">7</option>
+                                 <option value="8">8</option>
+                              </select>
+                              <select class="form-select mb-1" aria-label="Default select example" name="cSCableLength">
+                                 <option selected disabled>Cable Length</option>
+                                 <option value="5">5 meters</option>
+                                 <option value="7">7 meters</option>
+                              </select>
+                              <select class="form-select mb-1" aria-label="Default select example" name="cSCurrent">
+                                 <option selected disabled>Current</option>
+                                 <option value="B">125 A</option>
+                                 <option value="C">200 A</option>
+                                 <option value="D">250 A</option>
+                                 <option value="E">300 A</option>
+                              </select>
+                              <select class="form-select mb-1" aria-label="Default select example" name="cSUI">
+                                 <option selected disabled>UI & Paymanet</option>
+                                 <option value="S">S - Standard User Interface</option>
+                                 <option value="P">P - Payter</option>
+                              </select>
+                              <select class="form-select mb-1" name="cSBranding">
+                                 <option selected disabled>Branding</option>
+                                 <option value="">Kempower Standard</option>
+                                 <option value="C0">C0 - unbranded</option>
+                                 <option value="CN">CN - branded</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>   
+                 </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+             </div>
             <!--generate button-->
             <div class="col-sm-12 p-3 d-flex justify-content-center">
                <button type="submit" class="btn btn-primary" style="background-color: #ff6400; border-color: #ff6400;">Generate</button>

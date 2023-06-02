@@ -12,6 +12,8 @@
     <section class="col-12 d-flex align-items-center flex-column">
         <div class="d-flex flex-wrap" id="element-to-print" style="width: inherit;">
 
+        <% if (pSCount > 0) { %>
+            <% for (var i = 1; i <= pSCount; i++ ) { %>           
                 <% if (powerStation == "single") { %>
                     <div class="col-md-3 d-flex flex-column align-items-center">
                         <img src="../partials/powerUnits/PowerUnit-C1-ID9-TB-Kempower.png" alt="" height="146px">
@@ -32,6 +34,8 @@
                         <%- psCode %>
                     </div>                   
                 <% } %>
+            <% } %>
+        <% } %>
 
                 <% for (var i = 1; i <= acCount;  i++ ) { %>
                     <div class="col-md-3 d-flex flex-column align-items-center">
@@ -43,7 +47,7 @@
                 <% for (var i = 1; i <= lcCount;  i++ ) { %>
                     <div class="col-md-3 d-flex flex-column align-items-center">
                         <img src="../partials/sattellites/S-Series-LC-CCS2.png" alt="" height="146px">
-                        STQ.C.5.F.S
+                        STQ C 5 F S
                     </div>
                 <% } %>
                 
@@ -97,6 +101,24 @@
                          </div>                        
                          PCNNUCO
                     </div>
+                <% } %>
+
+                <% if (cSCount > 0) { %>
+                    <% for (var i = 1; i <= cSCount; i++ ) { %>
+                        <% if (chargingStation == "single") { %>
+                            <div class="col-md-3 d-flex flex-column align-items-center">
+                                <img src="../partials/chargingStations/singleCS.png" alt="" height="146px">
+                                <%- cSCode %>
+                            </div>                   
+                        <% } %>
+
+                        <% if (chargingStation == "double") { %>
+                            <div class="col-md-3 d-flex flex-column align-items-center">
+                                <img src="../partials/chargingStations/doubleCS.png" alt="" height="146px">
+                                <%- cSCode %>
+                            </div>                   
+                        <% } %>
+                    <% } %>
                 <% } %>
         </div>
         <input type="button" value="Save as PDF" id="saveAsPdf" class="btn btn-primary mt-3" style="width: fit-content;">
