@@ -40,31 +40,31 @@ router.post('/plan', async (req, res) => {
     const doubleCcs2Current = req.body.doubleCcs2Current;
     const doubleCcs2Ui = req.body.doubleCcs2Ui;
     const doubleCcs2Branding = req.body.doubleCcs2Branding;
-    let doubleCcs2Code = "S CC " + doubleCcs2Length + " " + doubleCcs2Current + " " + doubleCcs2Ui + " " + doubleCcs2Branding;
+    let doubleCcs2Code = "ST CC " + doubleCcs2Length + " " + doubleCcs2Current + " " + doubleCcs2Ui + " " + doubleCcs2Branding;
 
     const ccs2chLength = req.body.ccs2chLength;
     const ccs2chCurrent = req.body.ccs2chCurrent;
     const ccs2chUi = req.body.ccs2chUi;
     const ccs2chBranding = req.body.ccs2chBranding;
-    let ccs2chCode = "S CD " + ccs2chLength + " " + ccs2chCurrent + " " + ccs2chUi + " " + ccs2chBranding;
+    let ccs2chCode = "ST CD " + ccs2chLength + " " + ccs2chCurrent + " " + ccs2chUi + " " + ccs2chBranding;
 
     const ccs2Length = req.body.ccs2Length;
     const ccs2Current = req.body.ccs2Current;
     const ccs2Ui = req.body.ccs2Ui;
     const ccs2Branding = req.body.ccs2Branding;
-    let ccs2Code = "S C " + ccs2Length + " " + ccs2Current + " " + ccs2Ui + " " + ccs2Branding;
+    let ccs2Code = "ST C " + ccs2Length + " " + ccs2Current + " " + ccs2Ui + " " + ccs2Branding;
 
     const xTypeLength = req.body.xTypeLength;
     const xTypeCurrent = req.body.xTypeCurrent;
     const xTypeUi = req.body.xTypeUi;
     const xTypeBranding = req.body.xTypeBranding;
-    let xTypeCode = "S X " + xTypeLength + " " + xTypeCurrent + " " + xTypeUi + " " + xTypeBranding;
+    let xTypeCode = "ST X " + xTypeLength + " " + xTypeCurrent + " " + xTypeUi + " " + xTypeBranding;
 
     const chademoLength = req.body.chademoLength;
     const chademoCurrent = req.body.chademoCurrent;
     const chademoUi = req.body.chademoUi;
     const chademoBranding = req.body.chademoBranding;
-    let chademoCode = "S D " + chademoLength + " " + chademoCurrent + " " + chademoUi + " " + chademoBranding;
+    let chademoCode = "ST D " + chademoLength + " " + chademoCurrent + " " + chademoUi + " " + chademoBranding;
 
     const pantographHeight = req.body.pantographHeight;
     const pantographWidth = req.body.pantographWidth;
